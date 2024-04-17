@@ -1,0 +1,39 @@
+Local storage in JavaScript allows you to store key-value pairs in a web browser. This storage persists even after the browser is closed, which makes it useful for storing small amounts of data locally.
+
+Here's how you can use local storage in JavaScript:
+
+1. Setting a value in local storage:
+javascript
+Copy code
+localStorage.setItem('key', 'value');
+2. Getting a value from local storage:
+javascript
+Copy code
+const value = localStorage.getItem('key');
+3. Removing a value from local storage:
+javascript
+Copy code
+localStorage.removeItem('key');
+4. Clearing all values from local storage:
+javascript
+Copy code
+localStorage.clear();
+Example:
+javascript
+Copy code
+// Set a value
+localStorage.setItem('username', 'john_doe');
+
+// Get a value
+const username = localStorage.getItem('username');
+console.log(username); // Output: john_doe
+
+// Remove a value
+localStorage.removeItem('username');
+
+// Clear all values
+localStorage.clear();
+Limitations:
+Local storage is limited to string key-value pairs.
+The data stored in local storage is accessible by any script from the same domain.
+The total storage size is limited (usually around 5 MB per origin).
